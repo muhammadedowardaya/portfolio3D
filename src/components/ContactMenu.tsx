@@ -95,7 +95,7 @@ const ContactMenu = () => {
 								target="_blank"
 							>
 								<Icon icon="skill-icons:instagram" className="icon" />
-								<p className="instagram">@muhammadedowardaya</p>
+								<p className="instagram">@m_edo_wardaya</p>
 							</a>
 						</li>
 					</ul>
