@@ -13,5 +13,6 @@ export default defineConfig({
 		plugins: [tailwindcss()],
 	},
 
-	site: 'https://muhammadedowardaya.my.id',
+	site: 'https://muhammadedowardaya.github.io',
+	base: '/portfolio',
 });
