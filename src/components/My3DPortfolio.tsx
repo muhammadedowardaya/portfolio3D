@@ -80,6 +80,7 @@ export default function My3DPortfolio() {
 			audio.currentTime = 0;
 			audio.volume = 1;
 			audio.play().catch((err) => console.error('Audio play error:', err));
+			audio.loop = true;
 		}
 
 		if (isLoaded) {
