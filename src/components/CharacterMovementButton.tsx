@@ -20,13 +20,13 @@ const CharacterMovementButton = ({ className }: { className?: string }) => {
 			>
 				{direction === 'left' ? (
 					<img
-						src={`/icons/arrow-active.svg`}
+						src={`/portfolio/icons/arrow-active.svg`}
 						className="rotate-90 pointer-events-none w-[24px]"
 						alt="arrow icon"
 					/>
 				) : (
 					<img
-						src={`/icons/arrow.svg`}
+						src={`/portfolio/icons/arrow.svg`}
 						className="rotate-90 pointer-events-none w-[24px]"
 						alt="arrow icon"
 					/>
@@ -46,13 +46,13 @@ const CharacterMovementButton = ({ className }: { className?: string }) => {
 			>
 				{direction === 'right' ? (
 					<img
-						src={`/icons/arrow-active.svg`}
+						src={`/portfolio/icons/arrow-active.svg`}
 						className="-rotate-90 pointer-events-none w-[24px]"
 						alt="arrow icon"
 					/>
 				) : (
 					<img
-						src={`/icons/arrow.svg`}
+						src={`/portfolio/icons/arrow.svg`}
 						className="-rotate-90 pointer-events-none w-[24px]"
 						alt="arrow icon"
 					/>
