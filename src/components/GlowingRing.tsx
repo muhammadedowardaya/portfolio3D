@@ -51,7 +51,7 @@ const GlowingRing = () => {
 					<i></i>
 				</div>
 
-				<img src={`/portfolio/photo/aku-resized.jpg`} alt="my image" />
+				<img src={`/portfolio3D/photo/aku-resized.jpg`} alt="my image" />
 			</div>
 		</div>
 	);

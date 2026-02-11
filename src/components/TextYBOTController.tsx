@@ -4,7 +4,7 @@ import { Icon } from '@iconify/react';
 
 const TextYBOTController = () => {
 	const [currentIntroIndex, setCurrentIntroIndex] = useAtom(
-		currentIntroIndexAtom
+		currentIntroIndexAtom,
 	);
 
 	return (
@@ -21,13 +21,13 @@ const TextYBOTController = () => {
 			>
 				{currentIntroIndex === 1 ? (
 					<img
-						src={`/portfolio/icons/chevron-left.svg`}
+						src={`/portfolio3D/icons/chevron-left.svg`}
 						className="w-full pointer-events-none"
 						alt="left button icon"
 					/>
 				) : (
 					<img
-						src={`/portfolio/icons/chevron-left-active.svg`}
+						src={`/portfolio3D/icons/chevron-left-active.svg`}
 						className="w-full pointer-events-none"
 						alt="left button active icon"
 					/>
@@ -45,13 +45,13 @@ const TextYBOTController = () => {
 			>
 				{currentIntroIndex === 3 ? (
 					<img
-						src={`/portfolio/icons/chevron-right.svg`}
+						src={`/portfolio3D/icons/chevron-right.svg`}
 						className="w-full pointer-events-none"
 						alt="right button icon"
 					/>
 				) : (
 					<img
-						src={`/portfolio/icons/chevron-right-active.svg`}
+						src={`/portfolio3D/icons/chevron-right-active.svg`}
 						className="w-full pointer-events-none"
 						alt="right button active icon"
 					/>

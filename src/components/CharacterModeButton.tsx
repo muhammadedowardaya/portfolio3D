@@ -18,13 +18,13 @@ const CharacterModeButton = ({ className }: { className?: string }) => {
 			>
 				{characterMode === 'walking' ? (
 					<img
-						src={`/portfolio/icons/walking-active.svg`}
+						src={`/portfolio3D/icons/walking-active.svg`}
 						alt="walking icon"
 						className="w-[40px] pointer-events-none"
 					/>
 				) : (
 					<img
-						src={`/portfolio/icons/walking.svg`}
+						src={`/portfolio3D/icons/walking.svg`}
 						alt="walking icon"
 						className="w-[40px] pointer-events-none"
 					/>
@@ -38,13 +38,13 @@ const CharacterModeButton = ({ className }: { className?: string }) => {
 			>
 				{characterMode === 'running' ? (
 					<img
-						src={`/portfolio/icons/running-active.svg`}
+						src={`/portfolio3D/icons/running-active.svg`}
 						alt="running icon"
 						className="w-[40px] pointer-events-none"
 					/>
 				) : (
 					<img
-						src={`/portfolio/icons/running.svg`}
+						src={`/portfolio3D/icons/running.svg`}
 						alt="running icon"
 						className="w-[40px] pointer-events-none"
 					/>
@@ -58,14 +58,14 @@ const CharacterModeButton = ({ className }: { className?: string }) => {
 			>
 				{characterMode === 'flying' ? (
 					<img
-						src={`/portfolio/icons/flying-active.svg`}
+						src={`/portfolio3D/icons/flying-active.svg`}
 						width={47}
 						alt="flying icon"
 						className="w-[40px] pointer-events-none"
 					/>
 				) : (
 					<img
-						src={`/portfolio/icons/flying.svg`}
+						src={`/portfolio3D/icons/flying.svg`}
 						width={47}
 						alt="flying icon"
 						className="w-[40px] pointer-events-none"
