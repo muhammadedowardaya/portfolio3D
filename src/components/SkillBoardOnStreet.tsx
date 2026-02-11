@@ -7,7 +7,7 @@ import { useGLTF } from '@react-three/drei';
 
 export function SkillBoardOnStreet(props) {
 	const { nodes, materials } = useGLTF(
-		`/portfolio/models/skills_board_on_street.glb`
+		`/portfolio3D/models/skills_board_on_street.glb`,
 	);
 	return (
 		<group {...props} dispose={null}>
@@ -383,4 +383,4 @@ export function SkillBoardOnStreet(props) {
 	);
 }
 
-useGLTF.preload(`/portfolio/models/skills_board_on_street.glb`);
+useGLTF.preload(`/portfolio3D/models/skills_board_on_street.glb`);

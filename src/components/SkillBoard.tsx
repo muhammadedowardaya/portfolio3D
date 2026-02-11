@@ -26,7 +26,7 @@ type MeshProps = JSX.IntrinsicElements['group'];
 export function SkillBoard(props: MeshProps) {
 	const group = useRef<Group | null>(null);
 	const { nodes, materials, animations } = useGLTF(
-		`/portfolio/models/skills-board.glb`
+		`/portfolio3D/models/skills-board.glb`,
 	);
 	const { actions } = useAnimations(animations, group);
 
@@ -123,4 +123,4 @@ export function SkillBoard(props: MeshProps) {
 	);
 }
 
-useGLTF.preload(`/portfolio/models/skills-board.glb`);
+useGLTF.preload(`/portfolio3D/models/skills-board.glb`);

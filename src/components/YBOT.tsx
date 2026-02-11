@@ -46,7 +46,7 @@ type CharacterProps = JSX.IntrinsicElements['group'] & {
 export function YBOT({ loopAnimation, ...props }: CharacterProps) {
 	const group = useRef<Group>(null);
 	const { nodes, materials, animations } = useGLTF(
-		`/portfolio/models/YBOT.glb`
+		`/portfolio3D/models/YBOT.glb`,
 	);
 	const { actions, mixer } = useAnimations(animations, group);
 
@@ -62,7 +62,7 @@ export function YBOT({ loopAnimation, ...props }: CharacterProps) {
 	const { width } = useWindowSize();
 
 	const [characterPosition, setCharacterPosition] = useAtom(
-		characterPositionAtom
+		characterPositionAtom,
 	);
 
 	const didMountRef = useRef(false);
@@ -71,7 +71,7 @@ export function YBOT({ loopAnimation, ...props }: CharacterProps) {
 	const setRightHandPosition = useSetAtom(rightHandPositionAtom);
 
 	const [currentIntroIndex, setCurrentIntroIndex] = useAtom(
-		currentIntroIndexAtom
+		currentIntroIndexAtom,
 	);
 	const characterMode = useAtomValue(characterModeAtom);
 
@@ -81,7 +81,7 @@ export function YBOT({ loopAnimation, ...props }: CharacterProps) {
 	const [characterAction, setCharacterAction] = useAtom(characterActionAtom);
 
 	const [currentAction, setCurrentAction] = useState<AnimationAction | null>(
-		null
+		null,
 	);
 
 	const loopableActions = useMemo(
@@ -96,7 +96,7 @@ export function YBOT({ loopAnimation, ...props }: CharacterProps) {
 			'offensive_idle',
 			'flying',
 		],
-		[]
+		[],
 	);
 
 	const rigidbodyRef = useRef<any>(null);
@@ -185,7 +185,7 @@ export function YBOT({ loopAnimation, ...props }: CharacterProps) {
 					}
 					setMovementForContactMenu(false);
 				},
-				lastSelectedMenuRef.current === 'kontak' ? 2000 : 0
+				lastSelectedMenuRef.current === 'kontak' ? 2000 : 0,
 			);
 		} else if (selectedMenu === 'telusuri_jalan_ini') {
 			setCurrentIntroIndex(1);
@@ -215,7 +215,7 @@ export function YBOT({ loopAnimation, ...props }: CharacterProps) {
 					setMovementForContactMenu(false);
 					playLoop(lastSelectedMenuRef.current === 'kontak' ? 'walking' : null);
 				},
-				lastSelectedMenuRef.current === 'kontak' ? 2000 : 0
+				lastSelectedMenuRef.current === 'kontak' ? 2000 : 0,
 			);
 		} else if (selectedMenu === 'kontak') {
 			setCurrentIntroIndex(1);
@@ -278,7 +278,7 @@ export function YBOT({ loopAnimation, ...props }: CharacterProps) {
 			const targetPosition = new Vector3(pos.x, pos.y, -4).add(offset);
 			camera.position.lerp(
 				targetPosition,
-				isLooking ? (width >= 1024 ? 0.1 : 0.05) : 0.2
+				isLooking ? (width >= 1024 ? 0.1 : 0.05) : 0.2,
 			);
 			// camera.lookAt(pos.x, pos.y, pos.z);
 		} else if (selectedMenu === 'kontak') {
@@ -304,7 +304,7 @@ export function YBOT({ loopAnimation, ...props }: CharacterProps) {
 				targetY,
 				lastSelectedMenuRef.current === 'kontak' && selectedMenu !== 'kontak'
 					? 1
-					: 0.3
+					: 0.3,
 			);
 		}
 	};
@@ -346,8 +346,8 @@ export function YBOT({ loopAnimation, ...props }: CharacterProps) {
 				characterAction === 'walking'
 					? 1.9
 					: characterAction === 'running'
-					? 5
-					: 7;
+						? 5
+						: 7;
 
 			let vel;
 
@@ -507,4 +507,4 @@ export function YBOT({ loopAnimation, ...props }: CharacterProps) {
 	);
 }
 
-useGLTF.preload(`/portfolio/models/YBOT.glb`);
+useGLTF.preload(`/portfolio3D/models/YBOT.glb`);

@@ -68,7 +68,7 @@ export default function My3DPortfolio() {
 	};
 
 	useEffect(() => {
-		audioRef.current = new Audio(`/portfolio/sfx/loading.mp3`);
+		audioRef.current = new Audio(`/portfolio3D/sfx/loading.mp3`);
 	}, []);
 
 	useEffect(() => {
@@ -96,8 +96,8 @@ export default function My3DPortfolio() {
 				style={{
 					backgroundImage:
 						width !== null && width >= 1000
-							? `url(/portfolio/photo/bg-desktop.png)`
-							: `url(/portfolio/photo/bg-mobile.png)`,
+							? `url(/portfolio3D/photo/bg-desktop.png)`
+							: `url(/portfolio3D/photo/bg-mobile.png)`,
 				}}
 			>
 				<div className="bg-[#171717] w-[90%] md:w-[500px]  border-2 text-white border-white z-30 p-8 rounded-md flex flex-col gap-4 justy-center items-center ">
@@ -155,7 +155,7 @@ export default function My3DPortfolio() {
 					</Physics>
 				</Suspense>
 				<Environment
-					files={`/portfolio/textures/DaySkyHDRI055B_2K-HDR.exr`}
+					files={`/portfolio3D/textures/DaySkyHDRI055B_2K-HDR.exr`}
 					// background
 					ground={{
 						height: 0, // Atur tinggi sphere HDRI dari ground ke atas
