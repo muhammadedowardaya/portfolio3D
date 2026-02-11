@@ -6,8 +6,8 @@ Selamat datang di portfolio 3D saya! Saya adalah seorang **Front-End Developer**
 
 ## 🔗 Tautan
 
-- Live Demo: [muhammadedowardaya.github.io/portfolio](https://muhammadedowardaya.github.io/portfolio)
-- Repository: [github.com/muhammadedowardaya/portfolio](https://github.com/muhammadedowardaya/portfolio)
+- Live Demo: [muhammadedowardaya.github.io/portfolio](https://muhammadedowardaya.github.io/portfolio3D)
+- Repository: [github.com/muhammadedowardaya/portfolio](https://github.com/muhammadedowardaya/portfolio3D)
 
 ---
 
