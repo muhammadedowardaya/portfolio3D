@@ -6,7 +6,7 @@ import React, { useRef } from 'react';
 import { useGLTF } from '@react-three/drei';
 
 export function Billboard(props) {
-	const { nodes, materials } = useGLTF(`/portfolio/models/billboard.glb`);
+	const { nodes, materials } = useGLTF(`/portfolio3D/models/billboard.glb`);
 	return (
 		<group {...props} dispose={null}>
 			<mesh
@@ -411,4 +411,4 @@ export function Billboard(props) {
 	);
 }
 
-useGLTF.preload(`/portfolio/models/billboard.glb`);
+useGLTF.preload(`/portfolio3D/models/billboard.glb`);
