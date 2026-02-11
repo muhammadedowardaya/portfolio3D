@@ -30,7 +30,7 @@ export function SkillBoard(props: MeshProps) {
 	);
 	const { actions } = useAnimations(animations, group);
 
-	const texture = useTexture(`/portfolio/textures/my-skills.png`);
+	const texture = useTexture(`/portfolio3D/textures/my-skills.png`);
 	texture.wrapS = texture.wrapT = RepeatWrapping;
 	texture.repeat.set(1, 1);
 
